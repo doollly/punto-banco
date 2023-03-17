@@ -24,7 +24,8 @@ class PuntoBanco:
         self.deal()
         print(f"Punto hand: {self.punto} ({self.total(self.punto)})")
         print(f"Banco hand: [{self.banco[0]}, X]")
-
+  print(f"Punto hand: {self.punto} ({self.total(self.punto)})")
+        print(f"Banco hand: [{self.banco[0]}, X]")
         while self.total(self.punto) < 21:
             action = input("Do you want to hit or stand? ")
             if action == "hit":
